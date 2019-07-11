@@ -9,7 +9,8 @@ public static void main(String[] args) {
 	//int bob = Integer.parseInt(num);
 	//highLow(bob);
 	//randomNumber1();
-	sleep();
+	//sleep();
+	evenOrOdd(69909);
 }
 //finish the methods below
 
@@ -72,7 +73,7 @@ int gene = Integer.parseInt(sleep);
 if (gene < 6) {
 	JOptionPane.showMessageDialog(null, "That's not enough.");
 }
-else if (gene >= 6) {
+else if (gene >= 6 && gene <= 8) {
 	JOptionPane.showMessageDialog(null, "Good job");
 } 
 else {
@@ -91,7 +92,12 @@ else {
 
 //finish this method so that "even" is printed if the number is even, or "odd" if the number is odd
 public static void evenOrOdd(int number){
-
+	if (number % 2 == 0) {
+		System.out.println("even");
+	}
+	else {
+		System.out.println("odd");
+	}
 }
 
 
